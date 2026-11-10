@@ -70,7 +70,7 @@ public class ApiTests
         Assert.Equal(7, result.GetProperty("caughtAt").GetProperty("y").GetInt32());
     }
  
-    [Fact]
+    [Fact]  
     public async Task Leaderboard_lists_fewest_steps_first()
     {
         using HttpClient client = await StartApiAsync();
